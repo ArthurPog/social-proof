@@ -51,7 +51,7 @@ Specifically:
 - I can use the gap property in a Flexbox
 - I used the @font-face fule in CSS and load in fonts, because the font in question (Sparta) is no longer available through Google Fonts
 - I used the self position properties of items located in a grid (justify-self, align-self, position-self) for the first time
-- 
+
 ## Tools used
 
 - **VS Code** with a few extensions:
