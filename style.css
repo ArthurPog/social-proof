@@ -83,6 +83,7 @@ h2 {
 main {
   width: 100%;
   margin: 5.33rem 1.6rem 1.6rem;
+  padding: 2rem;
   max-width: 74em;
   text-align: center;
   display: grid;
@@ -219,6 +220,7 @@ main {
 
   main {
     margin-top: 8.33rem;
+    padding: unset;
   }
 
   .rating-individual {
