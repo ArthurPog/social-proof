@@ -1,34 +1,23 @@
-@font-face {
-  font-family: "Spartan";
-  src: url(./fonts/Spartan-400.ttf) format('truetype');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Spartan";
-  src: url(./fonts/Spartan-500.ttf) format('truetype');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Spartan";
-  src: url(./fonts/Spartan-700.ttf) format('truetype');
-  font-weight: 700;
-}
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
 
 :root{
-  font-family: 'Spartan', sans-serif;
+  font-family: 'League Spartan', sans-serif;
   font-size: 15px;
   color: var(--clr-Very-Dark-Magenta);
-  --font-size-h1-l: 3.2rem;
-  --font-size-h1-s: 2.13rem;
-  --font-size-h2: 0.87rem;
-  --font-size-p-reviews: 0.87rem;
-  --line-height-p: 1.67rem;
-  --line-height-p-reviews: 1.47rem;
-  --letter-spacing-h1: -0.114rem;
-  --letter-spacing-p: -0.033rem;
-  --letter-spacing-p-reviews: -0.0153rem;
+  --font-size-h1-l: 3.733rem;
+  --font-size-h1-s: 2.667rem;
+  --font-size-h2: 1.133rem;
+  --font-size-p: 1.267rem;
+  --font-size-p-reviews: 1.133rem;
+  --font-size-rating: 1.133rem;
+  --line-height-h1-l: 3.2rem;
+  --line-height-h1-s: 2.133rem;
+  --line-height-p: 1.667rem;
+  --line-height-p-reviews: 1.467rem;
+  --letter-spacing-h1-l: -0.095rem;
+  --letter-spacing-h1-s: -0.095rem;
+  --letter-spacing-p: -0.042rem;
+  --letter-spacing-p-reviews: -0.02rem;
   --clr-Very-Dark-Magenta: hsl(300, 43%, 22%);
   --clr-Soft-Pink: hsl(333, 80%, 67%);
   --clr-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
@@ -58,7 +47,8 @@ body {
 
 h1 {
   font-size: var(--font-size-h1-s);
-  line-height: var(--font-size-h1-s);
+  line-height: var(--line-height-h1-s);
+  letter-spacing: var(--letter-spacing-h1);
 }
 
 p {
@@ -77,7 +67,7 @@ h2 {
 }
 
 .rating-name, .reviewer-role {
-  font-size: var(--font-size-p-reviews);
+  font-size: var(--font-size-rating);
 }
 
 main {
@@ -103,11 +93,13 @@ main {
 }
 
 .p-main {
-  margin-top: 1.2rem;
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-p);
+  margin-top: 1.133rem;
 }
 
 .rating {
-  margin-top: 2.67rem;
+  margin-top: 2.6rem;
   display: grid;
   align-items: start;
   place-items: center;
@@ -150,13 +142,14 @@ main {
 }
 
 .reviews {
-  margin-top: 3.27rem;
+  margin-top: 3.267rem;
   display: grid;
   gap: 1.067rem;
   width: 100%;
 }
 
 .review-card {
+  font-size: var(--font-size-p-reviews);
   background: var(--clr-Very-Dark-Magenta);
   border-radius: 0.53rem;
   color: var(--clr-White);
@@ -215,12 +208,15 @@ main {
 @media (min-width: 51.2em) {
   h1 {
     font-size: var(--font-size-h1-l);
-    line-height: var(--font-size-h1-l);
+    line-height: var(--line-height-h1-l);
   }
 
   main {
     margin-top: 8.33rem;
-    padding: unset;
+  }
+
+  .p-main {
+    margin-top: 1.73rem;
   }
 
   .rating-individual {
@@ -251,6 +247,11 @@ main {
     background-repeat: no-repeat;
     background-position: 0 0, bottom right;
   }
+
+  main {
+    padding: unset;
+  }
+
   .hero {
     display: flex;
     justify-content: space-between;
