@@ -14,7 +14,7 @@
   --line-height-h1-s: 2.133rem;
   --line-height-p: 1.667rem;
   --line-height-p-reviews: 1.467rem;
-  --letter-spacing-h1-l: -0.095rem;
+  --letter-spacing-h1-l: -0.133rem;
   --letter-spacing-h1-s: -0.095rem;
   --letter-spacing-p: -0.042rem;
   --letter-spacing-p-reviews: -0.02rem;
@@ -48,7 +48,7 @@ body {
 h1 {
   font-size: var(--font-size-h1-s);
   line-height: var(--line-height-h1-s);
-  letter-spacing: var(--letter-spacing-h1);
+  letter-spacing: var(--letter-spacing-h1-s);
 }
 
 p {
@@ -95,6 +95,7 @@ main {
 .p-main {
   font-size: var(--font-size-p);
   line-height: var(--line-height-p);
+  letter-spacing: var(--letter-spacing-p);
   margin-top: 1.133rem;
 }
 
@@ -209,10 +210,11 @@ main {
   h1 {
     font-size: var(--font-size-h1-l);
     line-height: var(--line-height-h1-l);
+    letter-spacing: var(--letter-spacing-h1);
   }
 
   main {
-    margin-top: 8.33rem;
+    margin-top: 7.867rem;
   }
 
   .p-main {
@@ -252,6 +254,10 @@ main {
     padding: unset;
   }
 
+  .p-main {
+    max-width: 23em;
+  }
+
   .hero {
     display: flex;
     justify-content: space-between;
@@ -271,16 +277,16 @@ main {
   .reviews {
     display:flex;
     gap: 2rem;
-    margin-top: 4.8rem;
+    margin-top: 4.733rem;
   }
 
   .review-card:nth-child(2) {
     position: relative;
-    top: 1rem;
+    top: 1.067rem;
   }
   
   .review-card:last-of-type {
     position: relative;
-    top: 2rem;
+    top: 2.134rem;
   }
 }
